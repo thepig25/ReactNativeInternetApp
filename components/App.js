@@ -12,6 +12,8 @@ import Home from './Home'
 import Instalation from './Instalation'
 import Plans from './Plans'
 import Connectivity from './Connectivity'
+import NearestStore from './NearestStore'
+
 import navigationHelper from '../helpers/navigation';
 import styles from '../styles/root';
 
@@ -82,6 +84,9 @@ class App extends Component {
 
 			case 'Connectivity':
 				return ( <Connectivity navigator={navigator}/> );
+
+			case 'NearestStore':
+				return ( <NearestStore navigator={navigator}/> );
 
 		}
 	}

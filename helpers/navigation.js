@@ -18,6 +18,10 @@ module.exports = function (scene) {
 		'Connectivity': {
 			title: 'Connectivity',
 			id: 'Connectivity'
+		},
+		'NearestStore': {
+			title: 'NearestStore',
+			id: 'NearestStore'
 		}
 	}
 
