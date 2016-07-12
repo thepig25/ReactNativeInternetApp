@@ -10,6 +10,10 @@ module.exports = function (scene) {
         'Instalation': {
             title: 'Instalation',
             id: 'Instalation'
+        },
+        'Plans': {
+            title: 'Plans',
+            id: 'Plans'
         }
     }
 

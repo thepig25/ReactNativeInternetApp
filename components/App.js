@@ -10,6 +10,7 @@ import { EventEmitter } from 'fbemitter';
 import Menu from './Menu';
 import Home from './Home'
 import Instalation from './Instalation'
+import Plans from './Plans'
 
 import navigationHelper from '../helpers/navigation';
 
@@ -76,6 +77,9 @@ class App extends Component {
 
             case 'Instalation':
                 return ( <Instalation navigator={navigator}/> );
+
+            case 'Plans':
+                return ( <Plans navigator={navigator}/> );
         }
     }
 }
