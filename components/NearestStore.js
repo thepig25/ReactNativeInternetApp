@@ -11,7 +11,7 @@ class NearestStore extends Component {
 			<MapView
 				style={{height: 600, margin: 20}}
 				showsUserLocation={true}
-				followUserLocation={true}
+				followUserLocation={false}
 				showsCompass={true}
 				overlays={[{
 					coordinates:[
