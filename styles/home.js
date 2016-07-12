@@ -9,7 +9,15 @@ module.exports = StyleSheet.create({
 		flex: 1,
 		flexDirection: 'column',
 		justifyContent: 'flex-start',
-		top: 70
+		top: 70,
+	},
+	container2: {
+		alignItems: 'center',
+		flex: 1,
+		flexDirection: 'column',
+		justifyContent: 'flex-start',
+		top: 70,
+		backgroundColor: 'red',
 	},
 	image: {
 		width: 217,
