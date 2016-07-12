@@ -6,13 +6,13 @@ import styles from '../styles/home'
 class Plans extends Component {
 
 	constructor(props) {
-	    super(props);
-	    this.state = {
+		super(props);
+		this.state = {
 			backButtonEnabled: false,
 			forwardButtonEnabled: false,
 			loading: true,
 			scalesPageToFit: true,
-	    };
+		};
 	}
     render(){
         return (
