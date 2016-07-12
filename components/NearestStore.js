@@ -18,7 +18,7 @@ class NearestStore extends Component {
 						{latitude: -33.8689632, longitude: 151.204549},
 					],
 					strokeColor: '#f007',
-					lineWidth: 3,
+					lineWidth: 10,
 				}]}
 
 			  />
