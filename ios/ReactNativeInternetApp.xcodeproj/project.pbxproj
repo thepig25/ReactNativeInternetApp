@@ -32,6 +32,15 @@
 		9878C3AFEA6341679487121D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 062EFB892AFD48ED87F87F32 /* Octicons.ttf */; };
 		C6299AE96FB04833BD3AE9B0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 451F4EA1E6874B9D8F7BAA5C /* Entypo.ttf */; };
 		CDC3901B23E84A0EB567DD62 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 528C33951FC74C46AFD248FA /* Zocial.ttf */; };
+		DB26771C1DABA26E00A20998 /* Airship in Resources */ = {isa = PBXBuildFile; fileRef = DB26771A1DABA26E00A20998 /* Airship */; };
+		DB26771D1DABA26E00A20998 /* AirshipKit in Resources */ = {isa = PBXBuildFile; fileRef = DB26771B1DABA26E00A20998 /* AirshipKit */; };
+		DB2677241DABA42600A20998 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2677231DABA41800A20998 /* AirshipKit.framework */; };
+		DB2677251DABA42600A20998 /* AirshipKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DB2677231DABA41800A20998 /* AirshipKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DB2677321DABA60F00A20998 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2677311DABA60F00A20998 /* NotificationService.swift */; };
+		DB2677361DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB26772F1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DBE681FC1DABAD4B00B39B71 /* AirshipKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2677231DABA41800A20998 /* AirshipKit.framework */; };
+		DBE681FE1DABAD6D00B39B71 /* AirshipAppExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE681FD1DABAD6D00B39B71 /* AirshipAppExtensions.framework */; };
+		DBE681FF1DABAD7700B39B71 /* AirshipAppExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DBE681FD1DABAD6D00B39B71 /* AirshipAppExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +121,27 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		DB2677221DABA41800A20998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB26771E1DABA41800A20998 /* AirshipKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 494DD9571B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
+		DB2677261DABA42600A20998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB26771E1DABA41800A20998 /* AirshipKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 494DD9561B0EB677009C134E;
+			remoteInfo = AirshipKit;
+		};
+		DB2677341DABA60F00A20998 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB26772E1DABA60F00A20998;
+			remoteInfo = com.ReactNativeInternetApp.Extension;
+		};
 		DB4C04FA1D34C88E00DDA0C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8222B3026CC4F4A9C9AF0B4 /* RNVectorIcons.xcodeproj */;
@@ -120,6 +150,41 @@
 			remoteInfo = RNVectorIcons;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB2677281DABA42600A20998 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DB2677251DABA42600A20998 /* AirshipKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26773A1DABA60F00A20998 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB2677361DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB2677471DABA78600A20998 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DBE681FF1DABAD7700B39B71 /* AirshipAppExtensions.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -152,6 +217,14 @@
 		B7DD09E71DA049BBBE1CC813 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		CF70A371087046DFAF8D3F54 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D0DB22CFED034F09BCCAAC44 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
+		DB26771A1DABA26E00A20998 /* Airship */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Airship; sourceTree = "<group>"; };
+		DB26771B1DABA26E00A20998 /* AirshipKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AirshipKit; sourceTree = "<group>"; };
+		DB26771E1DABA41800A20998 /* AirshipKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirshipKit.xcodeproj; path = AirshipKit/AirshipKit.xcodeproj; sourceTree = "<group>"; };
+		DB26772F1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.ReactNativeInternetApp.Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2677311DABA60F00A20998 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		DB2677331DABA60F00A20998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2677451DABA74D00A20998 /* AirshipAppExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipAppExtensions.framework; path = "../../../Downloads/libUAirship-8.0.2 2/AirshipAppExtensions/build/Debug-iphoneos/AirshipAppExtensions.framework"; sourceTree = "<group>"; };
+		DBE681FD1DABAD6D00B39B71 /* AirshipAppExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipAppExtensions.framework; path = "../../../Library/Developer/Xcode/DerivedData/ReactNativeInternetApp-abqxuitmxxkznbdkbsbqldbobjwt/Build/Products/Debug-iphoneos/AirshipAppExtensions.framework"; sourceTree = "<group>"; };
 		DFA71EBDD8F14575AC1612FC /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,9 +249,19 @@
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
+				DB2677241DABA42600A20998 /* AirshipKit.framework in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				33364F172D6C458185F7C67F /* libRNVectorIcons.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26772C1DABA60F00A20998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE681FE1DABAD6D00B39B71 /* AirshipAppExtensions.framework in Frameworks */,
+				DBE681FC1DABAD4B00B39B71 /* AirshipKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,11 +415,16 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DB26771E1DABA41800A20998 /* AirshipKit.xcodeproj */,
+				DB26771A1DABA26E00A20998 /* Airship */,
+				DB26771B1DABA26E00A20998 /* AirshipKit */,
 				13B07FAE1A68108700A75B9A /* ReactNativeInternetApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeInternetAppTests */,
+				DB2677301DABA60F00A20998 /* com.ReactNativeInternetApp.Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				4E84046E7EB144AFA8E954D5 /* Resources */,
+				DB2677441DABA74D00A20998 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -347,8 +435,35 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* ReactNativeInternetApp.app */,
 				00E356EE1AD99517003FC87E /* ReactNativeInternetAppTests.xctest */,
+				DB26772F1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DB26771F1DABA41800A20998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB2677231DABA41800A20998 /* AirshipKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB2677301DABA60F00A20998 /* com.ReactNativeInternetApp.Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB2677311DABA60F00A20998 /* NotificationService.swift */,
+				DB2677331DABA60F00A20998 /* Info.plist */,
+			);
+			path = com.ReactNativeInternetApp.Extension;
+			sourceTree = "<group>";
+		};
+		DB2677441DABA74D00A20998 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBE681FD1DABAD6D00B39B71 /* AirshipAppExtensions.framework */,
+				DB2677451DABA74D00A20998 /* AirshipAppExtensions.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DB4C04ED1D34C88B00DDA0C3 /* Products */ = {
@@ -388,15 +503,37 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				DB2677281DABA42600A20998 /* Embed Frameworks */,
+				DB26773A1DABA60F00A20998 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB2677271DABA42600A20998 /* PBXTargetDependency */,
+				DB2677351DABA60F00A20998 /* PBXTargetDependency */,
 			);
 			name = ReactNativeInternetApp;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeInternetApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DB26772E1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB2677371DABA60F00A20998 /* Build configuration list for PBXNativeTarget "com.ReactNativeInternetApp.Extension" */;
+			buildPhases = (
+				DB26772B1DABA60F00A20998 /* Sources */,
+				DB26772C1DABA60F00A20998 /* Frameworks */,
+				DB26772D1DABA60F00A20998 /* Resources */,
+				DB2677471DABA78600A20998 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.ReactNativeInternetApp.Extension;
+			productName = com.ReactNativeInternetApp.Extension;
+			productReference = DB26772F1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -404,12 +541,22 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = BN994Y5J2G;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = BN994Y5J2G;
+					};
+					DB26772E1DABA60F00A20998 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BN994Y5J2G;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -425,6 +572,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = DB26771F1DABA41800A20998 /* Products */;
+					ProjectRef = DB26771E1DABA41800A20998 /* AirshipKit.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -474,6 +625,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* ReactNativeInternetApp */,
 				00E356ED1AD99517003FC87E /* ReactNativeInternetAppTests */,
+				DB26772E1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -549,6 +701,13 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DB2677231DABA41800A20998 /* AirshipKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AirshipKit.framework;
+			remoteRef = DB2677221DABA41800A20998 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		DB4C04FB1D34C88E00DDA0C3 /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -577,9 +736,18 @@
 				5A6F9EF1139A4EB187D14115 /* FontAwesome.ttf in Resources */,
 				2A0292CD6D14489D931EE387 /* Foundation.ttf in Resources */,
 				034ED1A029944A75B52ABA58 /* Ionicons.ttf in Resources */,
+				DB26771C1DABA26E00A20998 /* Airship in Resources */,
 				05AE9D34B8DE47FF8F4661BD /* MaterialIcons.ttf in Resources */,
 				9878C3AFEA6341679487121D /* Octicons.ttf in Resources */,
+				DB26771D1DABA26E00A20998 /* AirshipKit in Resources */,
 				CDC3901B23E84A0EB567DD62 /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB26772D1DABA60F00A20998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +788,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB26772B1DABA60F00A20998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2677321DABA60F00A20998 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -627,6 +803,16 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* ReactNativeInternetApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+		DB2677271DABA42600A20998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AirshipKit;
+			targetProxy = DB2677261DABA42600A20998 /* PBXContainerItemProxy */;
+		};
+		DB2677351DABA60F00A20998 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB26772E1DABA60F00A20998 /* com.ReactNativeInternetApp.Extension */;
+			targetProxy = DB2677341DABA60F00A20998 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -647,6 +833,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BN994Y5J2G;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -668,6 +855,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BN994Y5J2G;
 				INFOPLIST_FILE = ReactNativeInternetAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -683,8 +871,10 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = BN994Y5J2G;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -692,6 +882,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = ReactNativeInternetApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -704,7 +895,9 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BN994Y5J2G;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -712,6 +905,7 @@
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 				);
 				INFOPLIST_FILE = ReactNativeInternetApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -809,6 +1003,59 @@
 			};
 			name = Release;
 		};
+		DB2677381DABA60F00A20998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = BN994Y5J2G;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = com.ReactNativeInternetApp.Extension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeInternetApp.com-ReactNativeInternetApp-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB2677391DABA60F00A20998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = BN994Y5J2G;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = com.ReactNativeInternetApp.Extension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.ReactNativeInternetApp.com-ReactNativeInternetApp-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -835,6 +1082,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB2677371DABA60F00A20998 /* Build configuration list for PBXNativeTarget "com.ReactNativeInternetApp.Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB2677381DABA60F00A20998 /* Debug */,
+				DB2677391DABA60F00A20998 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

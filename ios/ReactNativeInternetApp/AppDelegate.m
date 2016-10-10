@@ -10,12 +10,23 @@
 #import "AppDelegate.h"
 
 #import "RCTRootView.h"
+#import <AirshipKit/AirshipKit.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+  
+  // Call takeOff (which creates the UAirship singleton)
+  [UAirship takeOff];
+  
+  // User notifications will not be enabled until userPushNotificationsEnabled is
+  // set YES on UAPush. Once enabled, the setting will be persisted and the user
+  // will be prompted to allow notifications. Normally, you should wait for a more
+  // appropriate time to enable push to increase the likelihood that the user will
+  // accept notifications.
+  [UAirship push].userPushNotificationsEnabled = YES;
 
   /**
    * Loading JavaScript code - uncomment the one you want.
