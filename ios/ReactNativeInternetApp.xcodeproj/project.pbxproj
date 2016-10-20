@@ -33,6 +33,7 @@
 		C6299AE96FB04833BD3AE9B0 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 451F4EA1E6874B9D8F7BAA5C /* Entypo.ttf */; };
 		CDC3901B23E84A0EB567DD62 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 528C33951FC74C46AFD248FA /* Zocial.ttf */; };
 		DB260FC11DB8C9EB005BE0D0 /* libTouchID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB260FC01DB8C708005BE0D0 /* libTouchID.a */; };
+		DB260FC81DB8DE90005BE0D0 /* libRNQuickAction.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB260FC71DB8DE76005BE0D0 /* libRNQuickAction.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = TouchID;
 		};
+		DB260FC61DB8DE76005BE0D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB260FC21DB8DE76005BE0D0 /* RNQuickAction.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 91090D8B1BB6C934009AE358;
+			remoteInfo = RNQuickAction;
+		};
 		DB4C04FA1D34C88E00DDA0C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A8222B3026CC4F4A9C9AF0B4 /* RNVectorIcons.xcodeproj */;
@@ -161,6 +169,7 @@
 		CF70A371087046DFAF8D3F54 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		D0DB22CFED034F09BCCAAC44 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		DB260FBB1DB8C708005BE0D0 /* TouchID.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TouchID.xcodeproj; path = "../node_modules/react-native-touch-id/TouchID.xcodeproj"; sourceTree = "<group>"; };
+		DB260FC21DB8DE76005BE0D0 /* RNQuickAction.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNQuickAction.xcodeproj; path = "../node_modules/react-native-quick-actions/RNQuickAction/RNQuickAction.xcodeproj"; sourceTree = "<group>"; };
 		DFA71EBDD8F14575AC1612FC /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB260FC81DB8DE90005BE0D0 /* libRNQuickAction.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -316,6 +326,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				DB260FC21DB8DE76005BE0D0 /* RNQuickAction.xcodeproj */,
 				DB260FBB1DB8C708005BE0D0 /* TouchID.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -366,6 +377,14 @@
 			isa = PBXGroup;
 			children = (
 				DB260FC01DB8C708005BE0D0 /* libTouchID.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB260FC31DB8DE76005BE0D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB260FC71DB8DE76005BE0D0 /* libRNQuickAction.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -490,6 +509,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = DB260FC31DB8DE76005BE0D0 /* Products */;
+					ProjectRef = DB260FC21DB8DE76005BE0D0 /* RNQuickAction.xcodeproj */;
+				},
+				{
 					ProductGroup = DB4C04ED1D34C88B00DDA0C3 /* Products */;
 					ProjectRef = A8222B3026CC4F4A9C9AF0B4 /* RNVectorIcons.xcodeproj */;
 				},
@@ -582,6 +605,13 @@
 			fileType = archive.ar;
 			path = libTouchID.a;
 			remoteRef = DB260FBF1DB8C708005BE0D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB260FC71DB8DE76005BE0D0 /* libRNQuickAction.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNQuickAction.a;
+			remoteRef = DB260FC61DB8DE76005BE0D0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		DB4C04FB1D34C88E00DDA0C3 /* libRNVectorIcons.a */ = {
@@ -730,6 +760,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-touch-id/**",
+					"$(SRCROOT)/../node_modules/react-native-quick-actions/**",
 				);
 				INFOPLIST_FILE = ReactNativeInternetApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -756,6 +787,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-touch-id/**",
+					"$(SRCROOT)/../node_modules/react-native-quick-actions/**",
 				);
 				INFOPLIST_FILE = ReactNativeInternetApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

@@ -49,6 +49,17 @@
         </dict>
       </dict>
     </dict>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+      <dict>
+        <key>UIApplicationShortcutItemIconType</key>
+        <string>UIApplicationShortcutIconTypeLocation</string>
+        <key>UIApplicationShortcutItemTitle</key>
+        <string>Action Title</string>
+        <key>UIApplicationShortcutItemType</key>
+        <string>$(PRODUCT_BUNDLE_IDENTIFIER).action</string>
+      </dict>
+    </array>
     <key>UIAppFonts</key>
     <array>
       <string>Entypo.ttf</string>
